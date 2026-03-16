@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -63,10 +63,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="Session 1 quarto_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="Session 1 quarto_files/libs/quarto-html/anchor.min.js"></script>
 <link href="Session 1 quarto_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Session 1 quarto_files/libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="Session 1 quarto_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="Session 1 quarto_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="Session 1 quarto_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Session 1 quarto_files/libs/bootstrap/bootstrap-d5ac29a56adf641187225d49675c3d41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="Session 1 quarto_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script src="Session 1 quarto_files/libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="Session 1 quarto_files/libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="Session 1 quarto_files/libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -126,10 +126,10 @@ Introduction
 <p><a href="#fig-Posit_cloud_png" class="quarto-xref">Figure&nbsp;1</a> shows the opening Posit cloud page:</p>
 <div class="cell page-columns page-full">
 <div class="cell-output-display page-columns page-full">
-<div id="fig-Posit_cloud_png" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" alt="The opening Posit cloud page looks like this">
+<div id="fig-Posit_cloud_png" class="quarto-figure quarto-figure-center quarto-float anchored page-columns page-full" alt="The opening Posit cloud page looks like this">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-Posit_cloud_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
-<a href="Posit%20cloud.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Posit Cloud"><img src="Posit%20cloud.png" class="img-fluid figure-img column-page-right" style="width:100.0%" alt="The opening Posit cloud page looks like this"></a>
+<a href="Posit%20cloud.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="Posit%20cloud.png" class="img-fluid figure-img column-page-right" style="width:100.0%" alt="The opening Posit cloud page looks like this"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Posit_cloud_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Posit Cloud
@@ -148,10 +148,10 @@ Figure&nbsp;1: Posit Cloud
 <p>Go to <a href="https://posit.co/download/rstudio-desktop/">RStudio (click on this link)</a> <br><br> The page looks like this:<br></p>
 <div class="cell page-columns page-full">
 <div class="cell-output-display page-columns page-full">
-<div id="fig-RStudio_web_png" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" alt="The RStudio windows look like this by default">
+<div id="fig-RStudio_web_png" class="quarto-figure quarto-figure-center quarto-float anchored page-columns page-full" alt="The RStudio windows look like this by default">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-RStudio_web_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
-<a href="RStudio%20page.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: RStudio web site"><img src="RStudio%20page.png" class="img-fluid figure-img column-page-right" style="width:150.0%" alt="The RStudio windows look like this by default"></a>
+<a href="RStudio%20page.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2"><img src="RStudio%20page.png" class="img-fluid figure-img column-page-right" style="width:150.0%" alt="The RStudio windows look like this by default"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-RStudio_web_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: RStudio web site
@@ -170,7 +170,10 @@ Figure&nbsp;2: RStudio web site
 </ul></li>
 <li>Follow the installation instructions<br><br></li>
 </ul></li>
-<li>Install RStudio</li>
+<li>Install RStudio
+<ul>
+<li>Choose the version for your operating system (Windows or Mac)</li>
+</ul></li>
 </ol>
 <p><em>Note</em>: R updates quite regularly, and so it is a good idea to check the latest version of R from time to time. To update, simply repeat the instructions above to install the latest version of R.</p>
 </div>
@@ -179,10 +182,10 @@ Figure&nbsp;2: RStudio web site
 <p><a href="#fig-RStudio_png" class="quarto-xref">Figure&nbsp;3</a> shows the arrangement of the four windows in RStudio:</p>
 <div class="cell page-columns page-full">
 <div class="cell-output-display page-columns page-full">
-<div id="fig-RStudio_png" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" alt="The RStudio windows look like this by default">
+<div id="fig-RStudio_png" class="quarto-figure quarto-figure-center quarto-float anchored page-columns page-full" alt="The RStudio windows look like this by default">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-RStudio_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
-<a href="RStudio.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;3: RStudio"><img src="RStudio.png" class="img-fluid figure-img column-page-right" style="width:150.0%" alt="The RStudio windows look like this by default"></a>
+<a href="RStudio.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3"><img src="RStudio.png" class="img-fluid figure-img column-page-right" style="width:150.0%" alt="The RStudio windows look like this by default"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-RStudio_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;3: RStudio
@@ -223,7 +226,7 @@ Change global settings to your preferences
 <p>These settings will be saved in RStudio and used whenever you open it.<br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="global_options.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Global options"><img src="global_options.gif" class="img-fluid figure-img" alt="Global options"></a></p>
+<p><a href="global_options.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4" title="Global options"><img src="global_options.gif" class="img-fluid figure-img" alt="Global options"></a></p>
 <figcaption>Global options</figcaption>
 </figure>
 </div>
@@ -258,10 +261,10 @@ Tip
 </ul>
 <div class="cell">
 <div class="cell-output-display">
-<div id="fig-newFolder_png" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-newFolder_png" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-newFolder_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="NewFolder.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;4: Create a new folder"><img src="NewFolder.png" class="img-fluid figure-img" style="width:75.0%"></a>
+<a href="NewFolder.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5"><img src="NewFolder.png" class="img-fluid figure-img" style="width:75.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-newFolder_png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;4: Create a new folder
@@ -652,6 +655,13 @@ Click to see the output
 </div>
 </div>
 </div>
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;1: Posit Cloud</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;2: RStudio web site</span>
+<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;3: RStudio</span>
+<span class="glightbox-desc lightbox-desc-4">Global options</span>
+<span class="glightbox-desc lightbox-desc-5">Figure&nbsp;4: Create a new folder</span>
+</div>
 </section>
 
 </main>
@@ -691,7 +701,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -723,27 +744,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -751,7 +752,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -848,6 +849,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -1115,37 +1117,30 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"descPosition":"bottom","closeEffect":"zoom","selector":".lightbox"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
         }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
       }
-    });
-  
-  };
-  
-})();
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
           </script>
 
 

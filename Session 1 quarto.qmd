@@ -24,7 +24,7 @@ knitr::opts_chunk$set(echo = TRUE)
 This first workshop aims to introduce you to R and RStudio. R is the programming language; RStudio is the IDE (Integrated Development Environment) that makes R easier to use. You must first download R and then Download RStudio (R is a requirement for RStudio to work). <br><br>We are going to use RStudio on the cloud (Posit Cloud) during the workshop sessions. However, the free version only permits 25 hours of computing time per month, and I strongly recommend that you also set up R and RStudio on your own laptop and save the cloud files that we create on the cloud version to your laptop.<br> You can, of course, also bring your own laptop to the workshops and work on that there. <br><br> The 1st tab below shows you how to set up RStudio on the cloud.<br> The 2nd tab shows you how to set up R and RStudio on your own laptop. <br><br> *NB* You can use RStudio on a university computer from AppsAnywhere, but it is not ideal. the latest versions of R and RStudio are not installed, and you have to install previously used packages every time you use it.
 :::
 
-:::::::::::::: panel-tabset
+::: panel-tabset
 ## Set up RStudio (Cloud)
 
 This is the version of RStudio that we will use in the workshops. However, you should download and save all of the files we use to your own laptop and practice using RStudio on your laptop (see next tab).
@@ -51,8 +51,7 @@ knitr::include_graphics("Posit cloud.png")
 
 ## Install RStudio (Laptop)
 
-Go to [RStudio (click on this link)](https://posit.co/download/rstudio-desktop/) <br><br>
-The page looks like this:<br>
+Go to [RStudio (click on this link)](https://posit.co/download/rstudio-desktop/) <br><br> The page looks like this:<br>
 
 ```{r}
 #| label: fig-RStudio_web_png
@@ -66,13 +65,13 @@ The page looks like this:<br>
 knitr::include_graphics("RStudio page.png")
 ```
 
-
 1.  Install R
     -   Select the version for your computer (mac or Windows)
     -   Click on the first link for *R-(followed by the latest version number).pkg* to download the installation package
         -   For mac users, note which type of Mac you have: Intel or silicon (M1-3). You can find out by clicking on the apple symbol in the top left of your screen and select 'About this mac'.
     -   Follow the installation instructions<br><br>
 2.  Install RStudio
+    -   Choose the version for your operating system (Windows or Mac)
 
 *Note*: R updates quite regularly, and so it is a good idea to check the latest version of R from time to time. To update, simply repeat the instructions above to install the latest version of R.
 
@@ -401,4 +400,4 @@ save(chol_df, file="chol_df.RData") #<1>
 #| results: FALSE
 load(file = "chol_df.RData")
 ```
-::::::::::::::
+:::
