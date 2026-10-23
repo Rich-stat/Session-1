@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Downloading & Preparing R and RStudio {.tabset}
 
 ::: {.callout-note appearance="simple" collapse="true" title="Introduction" icon="true"}
-This first workshop aims to introduce you to R and RStudio. R is the programming language; RStudio is the IDE (Integrated Development Environment) that makes R easier to use. You must first download R and then Download RStudio (R is a requirement for RStudio to work). <br><br>We are going to use RStudio on the cloud (Posit Cloud) during the workshop sessions. However, the free version only permits 25 hours of computing time per month, and I strongly recommend that you also set up R and RStudio on your own laptop and save the cloud files that we create on the cloud version to your laptop.<br> You can, of course, also bring your own laptop to the workshops and work on that there. <br><br> The 1st tab below shows you how to set up RStudio on the cloud.<br> The 2nd tab shows you how to set up R and RStudio on your own laptop. <br><br> *NB* You can use RStudio on a university computer from AppsAnywhere, but it is not ideal. the latest versions of R and RStudio are not installed, and you have to install previously used packages every time you use it.
+This first workshop aims to introduce you to R and RStudio. R is the programming language; RStudio is the IDE (Integrated Development Environment) that makes R easier to use. <br><br>We are going to use RStudio on the cloud (Posit Cloud) during the workshop sessions. However, the free version only permits 25 hours of computing time per month, and I strongly recommend that you also set up R and RStudio on your own laptop and save the cloud files that we create on the cloud version to your laptop. To use RStudio on your own laptop, you must first download R and then download RStudio (R is a requirement for RStudio to work).<br> You can, of course, also bring your own laptop to the workshops and work on that there. <br><br> The 1st tab below shows you how to set up RStudio on the cloud.<br> The 2nd tab shows you how to set up R and RStudio on your own laptop. <br><br> *NB* You can use RStudio on a university computer from AppsAnywhere, but it is not ideal. the latest versions of R and RStudio are not installed, and you have to install previously used packages every time you use it.
 :::
 
 :::::::::::::: panel-tabset
@@ -45,11 +45,33 @@ Go to [Posit Cloud (click on this link)](https://posit.cloud/)<br><br>
 knitr::include_graphics("Posit cloud.png")
 ```
 
-- Select '**Get Started**'<br><br>
-- You will see a range of plan options: select '**Cloud Free**' by selecting "Learn more' and then sign up to create your own account. In future, use your ID details and password to login.<br><br>
+- Select '**Get Started**'<br>
+- You will see a range of plan options: select '**Cloud Free**' by selecting "Learn more' and then sign up to create your own account. In future, use your ID details and password to login.<br>
 - Select the blue icon in the top right corner that says '**New Project**'. <br>Then select **New RStudio Project** and create a new RStudio project called '**LS5022 Biostatistics**'. You can rename the project in the box at the top where it initially says 'Untitled Project' (you are allowed 25 projects on the free plan). <br>It is here that we will work and save our files in all of the workshops. <br>
 
-## Install RStudio (Laptop)
+## Install R & RStudio (Laptop)
+
+##### **1. Install R**
+
+First you need to install R. Go to the R website ('The Comprehensive R Archive Network') at<br> [R (click on this link)](https://cloud.r-project.org/) <br><br> The top of the page looks like this:
+
+```{r}
+#| label: fig-R_Network_png
+#| fig-cap: "R web site"
+#| fig-alt: "The Comprehensive R Archive Network page"
+#| out.width: "150%"
+#| fig-height: 2
+#| echo: false
+#| column: page-right
+#| lightbox: true
+knitr::include_graphics("R Download.png")
+```
+
+Click on the download link appropriate for your operating system (Windows or Mac) and follow the instructions.
+
+*Note*<br> For mac users, note which type of Mac you have: Intel or silicon (M1-3). You can find out by clicking on the apple symbol in the top left of your screen and select 'About this mac'. <br><br>
+
+##### **2. Install RStudio**
 
 Go to [RStudio (click on this link)](https://posit.co/download/rstudio-desktop/) <br><br> The page looks like this:<br>
 
@@ -58,22 +80,28 @@ Go to [RStudio (click on this link)](https://posit.co/download/rstudio-desktop/)
 #| fig-cap: "RStudio web site"
 #| fig-alt: "The RStudio windows look like this by default"
 #| out.width: "150%"
-#| fig-height: 3.5
+#| fig-height: 3.0
 #| echo: false
 #| column: page-right
 #| lightbox: true
-knitr::include_graphics("RStudio page.png")
+knitr::include_graphics("RStudio IDE.png")
 ```
 
-1.  Install R
-    - Select the version for your computer (mac or Windows)
-    - Click on the first link for *R-(followed by the latest version number).pkg* to download the installation package
-      - For mac users, note which type of Mac you have: Intel or silicon (M1-3). You can find out by clicking on the apple symbol in the top left of your screen and select 'About this mac'.
-    - Follow the installation instructions<br><br>
-2.  Install RStudio
-    - Choose the version for your operating system (Windows or Mac)
+This is the RStudio IDE User Guide which provides some useful information about RStudio as well as the download links for RStudio.<br><br> Scroll down to `Direct Downloads (Open Source)`, select the version appropriate for your operating system (Windos or Mac) and follow the instructions.<br>
 
-*Note*: R updates quite regularly, and so it is a good idea to check the latest version of R from time to time. To update, simply repeat the instructions above to install the latest version of R.
+```{r}
+#| label: fig-RStudio_down_png
+#| fig-cap: "RStudio download versions"
+#| fig-alt: "Select the RStudio version for your laptop"
+#| out.width: "150%"
+#| fig-height: 3.0
+#| echo: false
+#| column: page-right
+#| lightbox: true
+knitr::include_graphics("RStudio IDE Downloads.png")
+```
+
+*Note*: R and RStudio update quite regularly, and so it is a good idea to check the latest versions from time to time (RStudio will prompt you if there are new versions released). To update, simply repeat the instructions above to install the latest version of R.
 
 ## RStudio Setup
 
@@ -205,6 +233,7 @@ library(psych)
 greeting <- "Hello World" # <1>
 greeting # <2>
 ```
+
 1.  Store 'Hello World' into an object called 'greeting'
 2.  To see the content of the object, type its name. <br>
 
@@ -336,7 +365,8 @@ sd1
 vector1 |>
   describe()
 ```
-`|>` is the 'pipe' symbol.  It means the object (vector1) is sent to (or 'piped') to a function called 'describe()'.
+
+`|>` is the 'pipe' symbol. It means the object (vector1) is sent to (or 'piped') to a function called 'describe()'.
 
 ::: {.callout-note collapse="true" title="Click to see the output" icon="false"}
 ```{r}
@@ -348,7 +378,7 @@ vector1 |>
 ```
 :::
 
-Here, `mean()`, `sd()` and `describe()` are called **functions**. All functions are followed by () where arguments can be placed to specify what action is to be performed. We load particular packages to make use of their functions than enhance R.<br> <br> <br> **6. Save your r file on the cloud in your working directory.**<br> Once saved, you can download it to your own laptop:<br>
+<br> Here, `mean()`, `sd()` and `describe()` are called **functions**. All functions are followed by () where arguments can be placed to specify what action is to be performed. We load particular packages to make use of their functions than enhance R.<br> <br> <br> **6. Save your r file on the cloud in your working directory.**<br> Once saved, you can download it to your own laptop:<br>
 
 - Click on the More cog icon and select `Export...`<br>
 - Choose a name and save it. It will save to your Downloads folder on your computer.\
